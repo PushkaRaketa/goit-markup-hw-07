@@ -1,0 +1,138 @@
+.footer {
+  &__container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__form-container {
+    margin-left: auto;
+  }
+}
+
+.footer-social-container {
+  margin-left: 74px;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.link-white {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.link-grey-footer {
+  color: var(--grey-text-op60);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.link-grey-footer:hover,
+.link-grey-footer:focus,
+.link-white:hover,
+.link-white:focus {
+  color: var(--accent-color);
+}
+
+.addres .addres-link + .addres-link {
+  padding-top: 9px;
+}
+
+.podwal {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-link {
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.title-footer {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer-form {
+  display: inline-flex;
+}
+
+.footer-button {
+  background-color: var(--accent-color);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.88;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  font-weight: 700;
+}
+
+.sign-up-input {
+  display: block;
+  width: 358px;
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: rgb(47, 48, 58);
+  background-color: rgb(47, 48, 58);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.sign-up-input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.icon-send {
+  margin-left: 10px;
+}

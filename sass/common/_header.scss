@@ -1,0 +1,117 @@
+.contact-links-header {
+  color: rgb(117, 117, 117);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  display: inline-flex;
+  align-items: center;
+}
+
+.contact-links-header:hover,
+.contact-links-footer:hover,
+.contact-links-header:focus,
+.contact-links-footer:focus {
+  color: var(--accent-color);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logoblack {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.blu {
+  color: #2196f3;
+}
+
+.black {
+  color: #000000;
+}
+
+.tel-icon,
+.mail-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.site-nav {
+  margin-left: 93px;
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item + .item {
+  margin-left: 30px;
+}
+
+.site-nav a {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.link:focus {
+  color: black;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.current:visited {
+  color: var(--accent-color);
+}
+
+.current.link::after {
+  opacity: 1;
+}
+
+.link {
+  @include transition(color);
+}
+
+.link::after {
+  content: '';
+  position: relative;
+  display: block;
+  top: 100%;
+  left: 0;
+
+  height: 4px;
+  width: 100%;
+
+  transform: translateY(33px);
+  @include transition(opacity);
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  opacity: 0;
+}
+
+.link:hover.link::after {
+  opacity: 1;
+}

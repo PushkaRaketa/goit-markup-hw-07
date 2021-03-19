@@ -1,0 +1,50 @@
+.header__container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  &__info {
+    display: flex;
+  }
+
+  &__zero {
+    margin: auto;
+    width: 1200px;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  &__one {
+    padding: 0 15px;
+    margin: auto;
+    width: 1200px;
+
+    padding-top: 94px;
+  }
+
+  &__two {
+    background: #2f303a;
+
+    height: 252px;
+    padding: 60px 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__three {
+    padding: 0 15px;
+    margin: auto;
+    width: 1200px;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.filter {
+  padding-bottom: 94px;
+}
